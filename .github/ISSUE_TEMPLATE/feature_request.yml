@@ -1,0 +1,24 @@
+name: 💡 Feature Request
+description: Suggest an improvement to the installer.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For **product** feature requests (alerts, dashboards, integrations) please use
+        [Discussions → Ideas](https://github.com/ProxWatch/proxwatch-installer/discussions/categories/ideas)
+        instead — those flow into the public roadmap at https://proxwatch.com/roadmap.
+        This template is for **installer**-specific feature requests.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like the installer to do?
+    validations:
+      required: true
