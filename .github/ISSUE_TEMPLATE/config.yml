@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://proxwatch.com/manual
+    about: Most install questions are answered in the manual.
+  - name: 💬 Ask a question
+    url: https://github.com/ProxWatch/proxwatch-installer/discussions/categories/q-a
+    about: For "how do I..." questions, Discussions is the right place.
+  - name: 📧 Product support
+    url: mailto:support@proxwatch.com
+    about: Dashboard, license, or polling bugs go to support — not GitHub issues.
