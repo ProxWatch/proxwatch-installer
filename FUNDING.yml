@@ -1,0 +1,4 @@
+# Display a link in the GitHub UI that drives visitors to the commercial site.
+# This is a hosted product, not a donation-funded OSS project — point at the
+# real subscription page rather than a tip jar.
+custom: ["https://proxwatch.com/pricing"]
