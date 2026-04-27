@@ -1,0 +1,66 @@
+name: 🐛 Bug Report
+description: Something's broken in the ProxWatch installer.
+title: "[Bug] "
+labels: ["bug", "installer"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing! For **product** bugs (dashboard, license, SSH polling, alerts) email
+        **support@proxwatch.com** instead — that goes into our ticket system with full triage.
+        This template is for **installer**-specific bugs only.
+  - type: input
+    id: pw-version
+    attributes:
+      label: ProxWatch version
+      description: From `/portal` or `proxwatch-update --version`.
+      placeholder: "v1.2.3"
+    validations:
+      required: false
+  - type: dropdown
+    id: license-tier
+    attributes:
+      label: License tier
+      description: "Curious about the difference? See https://proxwatch.com/pricing"
+      options:
+        - Free (1 node)
+        - Trial
+        - Pro
+        - MSP
+        - Developer
+        - Not applicable / not yet activated
+    validations:
+      required: true
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment target
+      options:
+        - Bare-metal Linux host
+        - Full VM (recommended)
+        - Proxmox LXC container
+        - Cloud VM
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS / version
+      placeholder: "Debian 12.5 / Ubuntu 22.04.4"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Paste the installer output. Redact any secrets.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected to happen
+    validations:
+      required: false
